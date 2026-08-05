@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forever.css 💙</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="stars"></div>
+        <div class="aurora left"></div>
+        <div class="aurora right"></div>
+    </div>
+
+    <div class="container">
+
+        <div class="card" id="formCard">
+
+            <div class="logo">
+                💙
+            </div>
+
+            <h1>Happy Friendship Day</h1>
+
+            <p class="subtitle">
+                Create a beautiful surprise for your best friend.
+            </p>
+
+            <div class="inputBox">
+
+                <label>Your Name</label>
+
+                <input type="text" id="sender" placeholder="Enter your name">
+
+            </div>
+
+            <div class="inputBox">
+
+                <label>Friend's Name</label>
+
+                <input type="text" id="receiver" placeholder="Enter friend's name">
+
+            </div>
+
+            <button id="generateBtn">
+
+                ✨ Generate Surprise
+
+            </button>
+
+        </div>
+        <!-- Loading Card -->
+        <div class="card hidden" id="loadingCard">
+
+            <div class="loader"></div>
+
+            <h2>Creating your surprise...</h2>
+
+            <p>Please wait a moment ✨</p>
+
+        </div>
+
+        <!-- Result Card -->
+        <div class="card hidden" id="resultCard">
+
+            <h2 id="greeting">
+                💙
+            </h2>
+
+            <p id="friendMessage">
+
+                Thank you for always being there.
+
+                Happy Friendship Day ❤️
+
+            </p>
+
+            <blockquote>
+
+                "Real friendships never fade."
+
+            </blockquote>
+
+            <h3 id="signature">
+
+                — Someone
+
+            </h3>
+
+            <div class="buttonGroup">
+
+                <button id="downloadBtn">
+
+                    📥 Download
+
+                </button>
+
+                <button id="copyBtn">
+
+                    📋 Copy
+
+                </button>
+
+            </div>
+
+            <div class="buttonGroup">
+
+                <button id="shareBtn">
+
+                    📤 Share
+
+                </button>
+
+                <button id="surpriseBtn">
+
+                    🎁 Surprise
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Surprise Card -->
+        <div class="card hidden" id="surpriseCard">
+
+            <h2>
+
+                🎉 Happy Friendship Day 🎉
+
+            </h2>
+
+            <div class="bigText">
+
+                HAPPY
+
+                <br>
+
+                FRIENDSHIP
+
+                <br>
+
+                DAY
+
+            </div>
+
+            <p>
+
+                Some friendships shine forever. 💙
+
+            </p>
+
+            <button id="againBtn">
+
+                🔄 Create Again
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
